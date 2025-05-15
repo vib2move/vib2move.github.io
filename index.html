@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>VIB2MOVE: Visual-Inertial-Based Biometric Identification and Movement Analysis</title>
+    <title>VIB2MOVE: In-Hand Object Reconfiguration via Fingertip Micro-Vibrations</title>
 
-    <meta name="description" content="VIB2MOVE: Visual-Inertial-Based Biometric Identification and Movement Analysis">
+    <meta name="description" content="VIB2MOVE: In-Hand Object Reconfiguration via Fingertip Micro-Vibrations">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:image" content="https://vib2move.github.io/img/teaser.jpg">
@@ -16,14 +16,14 @@
     <meta property="og:image:height" content="630">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vib2move.github.io/" />
-    <meta property="og:title" content="VIB2MOVE: Visual-Inertial-Based Biometric Identification and Movement Analysis" />
+    <meta property="og:title" content="VIB2MOVE: In-Hand Object Reconfiguration via Fingertip Micro-Vibrations" />
     <meta property="og:description"
-        content="VIB2MOVE is a research project focused on biometric identification and movement analysis using visual-inertial data." />
+        content="VIB2MOVE is a novel approach for in-hand object reconfiguration that uses fingertip micro-vibrations and gravity to precisely reposition planar objects." />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VIB2MOVE: Visual-Inertial-Based Biometric Identification and Movement Analysis" />
+    <meta name="twitter:title" content="VIB2MOVE: In-Hand Object Reconfiguration via Fingertip Micro-Vibrations" />
     <meta name="twitter:description"
-        content="VIB2MOVE is a research project focused on biometric identification and movement analysis using visual-inertial data." />
+        content="VIB2MOVE is a novel approach for in-hand object reconfiguration that uses fingertip micro-vibrations and gravity to precisely reposition planar objects." />
     <meta name="twitter:image" content="https://vib2move.github.io/img/teaser.jpg" />
 
     <link rel="icon" href="favicon.ico">
@@ -43,7 +43,7 @@
         <header role="banner">
             <div class="row">
                 <h2 class="col-md-12 text-center">
-                    <b>VIB2MOVE:</b> Visual-Inertial-Based Biometric Identification and Movement Analysis</br>
+                    <b>VIB2MOVE:</b> In-Hand Object Reconfiguration via Fingertip Micro-Vibrations</br>
                 </h2>
             </div>
             <div class="row text-center">
@@ -51,14 +51,12 @@
                 </div>
                 <div class="container-fluid text-center">
                     <ul class="list-inline" style="white-space: nowrap; margin:0px 0px 0px 0px;">
-                        <li><a style="font-size: calc(min(3vw, 15px))" href="#">Author One¹</a></li>
-                        <li><a style="font-size: calc(min(3vw, 15px))" href="#">Author Two¹</a></li>
-                        <li><a style="font-size: calc(min(3vw, 15px))" href="#">Author Three²</a></li>
-                        <li><a style="font-size: calc(min(3vw, 15px))" href="#">Author Four²</a></li>
+                        <li><a style="font-size: calc(min(3vw, 15px))" href="mailto:yixili@umich.edu">Xili Yi¹</a></li>
+                        <li><a style="font-size: calc(min(3vw, 15px))" href="mailto:nfz@umich.edu">Nima Fazeli¹</a></li>
                     </ul>
                 </div>
                 <div class="col-md-12 text-center" style="font-size: calc(min(3vw, 15px))">
-                    ¹Institution One&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;²Institution Two
+                    ¹Department of Robotics, University of Michigan, Ann Arbor
                 </div>
             </div>
             <div class="row text-center">
@@ -70,7 +68,7 @@
                         </span>
                         <span>Paper</span>
                     </a>
-                    <a href="#" class="external-link button is-normal is-rounded is-dark"
+                    <a href="https://github.com/vib2move/vib2move" class="external-link button is-normal is-rounded is-dark"
                         style="width: 80px; font-size: 15px">
                         <span class="icon">
                             <i class="fa fa-github"></i>
@@ -92,14 +90,59 @@
             <!-- Teaser Section -->
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <div class="placeholder-image" style="background-color: #f0f0f0; height: 400px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                        <p>Teaser Image/Video Placeholder</p>
+                    <img src="img/teaser.jpg" alt="Vib2Move Teaser" class="img-fluid" style="width: 60%; margin: 0 auto 20px auto; display: block;">
+                </div>
+            </div>
+
+            <!-- Video Demo Section -->
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Video Demonstrations</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="ratio ratio-16x9" style="margin-bottom: 20px;">
+                                <video controls width="100%" poster="img/video_thumbnail.jpg">
+                                    <source src="videos/in_hand_reconfiguration_demo_obj1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p class="text-center">Object 1 Reconfiguration Demo</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ratio ratio-16x9" style="margin-bottom: 20px;">
+                                <video controls width="100%" poster="img/video_thumbnail2.jpg">
+                                    <source src="videos/in_hand_reconfiguration_demo_obj2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p class="text-center">Object 2 Reconfiguration Demo</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="ratio ratio-16x9" style="margin-bottom: 20px;">
+                                <video controls width="100%" poster="img/video_thumbnail3.jpg">
+                                    <source src="videos/in_hand_reconfiguration_demo_obj3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p class="text-center">Object 3 Reconfiguration Demo</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ratio ratio-16x9" style="margin-bottom: 20px;">
+                                <video controls width="100%" poster="img/video_thumbnail4.jpg">
+                                    <source src="videos/in_hand_reconfiguration_demo_obj4.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p class="text-center">Object 4 Reconfiguration Demo</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-8 offset-md-2 rounded highlight-section">
-                    <h6 style="text-align: center; color:rgb(0, 0, 0)"><strong>TL;DR</strong>: VIB2MOVE is a research project focused on biometric identification and movement analysis using visual-inertial data.</h6>
+                    <h6 style="text-align: center; color:rgb(0, 0, 0)"><strong>TL;DR</strong>: Vib2Move is a novel approach for in-hand object reconfiguration that uses fingertip micro-vibrations and gravity to precisely reposition planar objects with a parallel jaw gripper.</h6>
                 </div>
             </div><br><br>
 
@@ -108,7 +151,7 @@
                 <div class="col-md-8 offset-md-2">
                     <h3>Abstract</h3>
                     <p style="text-align: justify;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio.
+                        We introduce Vib2Move, a novel approach for in-hand object reconfiguration that uses fingertip micro-vibrations and gravity to precisely reposition planar objects. Our framework comprises three key innovations. First, we design a vibration-based actuator that dynamically modulates the effective finger-object friction coefficient, effectively emulating changes in gripping force. Second, we derive a sliding motion model for objects clamped in a parallel gripper with two symmetric, variable-friction contact patches. Third, we propose a motion planner that coordinates end-effector finger trajectories and fingertip vibrations to achieve the desired object pose. In real-world trials, Vib2Move consistently yields final positioning errors below 6 mm, demonstrating reliable, high-precision manipulation across a variety of planar objects.
                     </p>
                 </div>
             </div><br>
@@ -118,11 +161,22 @@
                 <div class="col-md-8 offset-md-2">
                     <h3>Method</h3>
                     <p style="text-align: justify;">
-                        Our approach combines visual and inertial data to create a robust biometric identification system. The method consists of three main components:
+                        Our approach leverages fingertip micro-vibrations to dynamically modulate friction at the contact interface, enabling precise control over object motion. The method consists of three main components:
                     </p>
-                    <div class="placeholder-image" style="background-color: #f0f0f0; height: 300px; display: flex; align-items: center; justify-content: center; margin: 20px 0;">
-                        <p>Method Overview Diagram Placeholder</p>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="img/method.jpg" alt="Method Overview" class="img-fluid" style="width: 80%; margin: 20px auto;">
+                        </div>
                     </div>
+                    <p style="text-align: justify;">
+                        <strong>1. Vibration-Based Friction Modulation:</strong> We design a simple gripper attachment with embedded vibration motors that can rapidly alternate between stick and slip regimes at the contact interface, effectively providing high-frequency control over the "equivalent" grasping force.
+                    </p>
+                    <p style="text-align: justify;">
+                        <strong>2. Sliding Motion Model:</strong> We derive a model for planar objects grasped vertically in free space, where gravity is the sole external force. Our model depends only on the geometry of the finger contact area, making it robust to uncertainties in friction and object weight.
+                    </p>
+                    <p style="text-align: justify;">
+                        <strong>3. Motion Planning:</strong> We develop a three-stage planning algorithm that coordinates end-effector finger trajectories and fingertip vibrations to achieve the desired object pose, using closed-loop visual feedback for precise control.
+                    </p>
                 </div>
             </div><br>
 
@@ -133,20 +187,20 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="feature-box">
-                                <h4>Feature 1</h4>
-                                <p>Description of the first key feature of the VIB2MOVE system.</p>
+                                <h4>Simple Design</h4>
+                                <p>Low-profile vibration motors in each finger of a standard parallel jaw gripper, requiring only on-off vibration signals for rapid friction control.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="feature-box">
-                                <h4>Feature 2</h4>
-                                <p>Description of the second key feature of the VIB2MOVE system.</p>
+                                <h4>Robust Control</h4>
+                                <p>Our approach is insensitive to exact friction coefficients and object mass, making it robust to variations in object properties and environmental conditions.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="feature-box">
-                                <h4>Feature 3</h4>
-                                <p>Description of the third key feature of the VIB2MOVE system.</p>
+                                <h4>Free-Space Manipulation</h4>
+                                <p>Enables in-hand object reconfiguration in free space without requiring environmental fixtures or complex force sensors.</p>
                             </div>
                         </div>
                     </div>
@@ -158,11 +212,16 @@
                 <div class="col-md-8 offset-md-2">
                     <h3>Results</h3>
                     <p style="text-align: justify;">
-                        We evaluated our method on several datasets and compared it with state-of-the-art approaches.
+                        We evaluated our method on a variety of planar objects with different shapes, surface materials, and mass distributions. Our experiments demonstrate that Vib2Move can reliably achieve precise in-hand object reconfiguration.
                     </p>
-                    <div class="placeholder-image" style="background-color: #f0f0f0; height: 300px; display: flex; align-items: center; justify-content: center; margin: 20px 0;">
-                        <p>Results Graph/Chart Placeholder</p>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="img/results.jpg" alt="Experimental Results" class="img-fluid" style="width: 80%; margin: 20px auto;">
+                        </div>
                     </div>
+                    <p style="text-align: justify;">
+                        For all tested paths across six different objects, the root mean square error (RMSE) at the final pose is 5.91 mm in position and 1.21° in orientation. The observed position errors correspond to approximately 3%-5% of the object dimensions. Our system successfully reconfigured objects with varying properties, demonstrating robustness to friction anisotropy and material inconsistencies.
+                    </p>
                 </div>
             </div><br>
 
@@ -171,14 +230,17 @@
                 <div class="col-md-8 offset-md-2">
                     <h3>Applications</h3>
                     <p style="text-align: justify;">
-                        The VIB2MOVE system can be applied to various domains including:
+                        The Vib2Move system can be applied to various robotics domains including:
                     </p>
                     <ul style="text-align: left;">
-                        <li><strong>Healthcare:</strong> Monitoring patient movement patterns for rehabilitation.</li>
-                        <li><strong>Security:</strong> Biometric identification for access control systems.</li>
-                        <li><strong>Sports Science:</strong> Analyzing athlete performance and movement efficiency.</li>
-                        <li><strong>Human-Computer Interaction:</strong> Gesture recognition for intuitive interfaces.</li>
+                        <li><strong>Manufacturing:</strong> Precise part positioning and alignment during assembly tasks.</li>
+                        <li><strong>Logistics:</strong> Reorienting objects for efficient packing or handover operations.</li>
+                        <li><strong>Service Robotics:</strong> Manipulating everyday objects in human environments.</li>
+                        <li><strong>Robotic Research:</strong> Platform for studying friction-based manipulation strategies.</li>
                     </ul>
+                    <p style="text-align: justify;">
+                        Our approach is particularly valuable in scenarios where environmental fixtures are unavailable or where complex multi-fingered hands would be impractical due to cost, complexity, or calibration requirements.
+                    </p>
                 </div>
             </div><br>
 
@@ -186,26 +248,18 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <h3>Team</h3>
-                    <div class="row">
-                        <div class="col-md-3 text-center">
-                            <div class="placeholder-image" style="background-color: #f0f0f0; height: 150px; width: 150px; border-radius: 50%; margin: 0 auto 10px auto;"></div>
-                            <h5>Team Member 1</h5>
-                            <p>Role/Institution</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <img src="img/xili.jpg" alt="Xili Yi" class="img-fluid" style="height: 150px; width: 150px; border-radius: 50%; margin: 0 auto 10px auto; object-fit: cover;">
+                            <h5>Xili Yi</h5>
+                            <p>Department of Robotics<br>University of Michigan</p>
+                            <p><a href="mailto:yixili@umich.edu">yixili@umich.edu</a></p>
                         </div>
-                        <div class="col-md-3 text-center">
-                            <div class="placeholder-image" style="background-color: #f0f0f0; height: 150px; width: 150px; border-radius: 50%; margin: 0 auto 10px auto;"></div>
-                            <h5>Team Member 2</h5>
-                            <p>Role/Institution</p>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <div class="placeholder-image" style="background-color: #f0f0f0; height: 150px; width: 150px; border-radius: 50%; margin: 0 auto 10px auto;"></div>
-                            <h5>Team Member 3</h5>
-                            <p>Role/Institution</p>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <div class="placeholder-image" style="background-color: #f0f0f0; height: 150px; width: 150px; border-radius: 50%; margin: 0 auto 10px auto;"></div>
-                            <h5>Team Member 4</h5>
-                            <p>Role/Institution</p>
+                        <div class="col-md-4 text-center">
+                            <img src="img/nima.jpg" alt="Nima Fazeli" class="img-fluid" style="height: 150px; width: 150px; border-radius: 50%; margin: 0 auto 10px auto; object-fit: cover;">
+                            <h5>Nima Fazeli</h5>
+                            <p>Department of Robotics<br>University of Michigan</p>
+                            <p><a href="mailto:nfz@umich.edu">nfz@umich.edu</a></p>
                         </div>
                     </div>
                 </div>
@@ -217,11 +271,11 @@
                     <h3>Citation</h3>
                     <div class="highlight-section">
                         <pre style="text-align: left; background: none; border: none; padding: 10px;">
-@article{vib2move2023,
-  title={VIB2MOVE: Visual-Inertial-Based Biometric Identification and Movement Analysis},
-  author={Author1 and Author2 and Author3 and Author4},
-  journal={Journal Name},
-  year={2023}
+@inproceedings{yi2025vib2move,
+  title={Vib2Move: In-Hand Object Reconfiguration via Fingertip Micro-Vibrations},
+  author={Yi, Xili and Fazeli, Nima},
+  booktitle={Robotics: Science and Systems},
+  year={2025}
 }
                         </pre>
                     </div>
@@ -233,14 +287,14 @@
                 <div class="col-md-8 offset-md-2">
                     <h3>Contact</h3>
                     <p>
-                        For questions about the project, please contact <a href="mailto:contact@example.com">contact@example.com</a>.
+                        For questions about the project, please contact <a href="mailto:yixili@umich.edu">Xili Yi</a> or <a href="mailto:nfz@umich.edu">Nima Fazeli</a>.
                     </p>
                 </div>
             </div>
         </main>
 
         <footer class="mt-5 pt-5 text-center text-muted">
-            <p>© 2023 VIB2MOVE Project</p>
+            <p>© 2025 Vib2Move Project | University of Michigan</p>
         </footer>
     </div>
 </body>
